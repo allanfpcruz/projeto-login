@@ -61,5 +61,83 @@ p#texto {
     font-size: 0.9em;
 }
 
+.campo {
+    background-color: var(--cor02);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.campo label {
+    display: none;
+}
+
+.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.campo > input {
+    background-color: var(--cor01);
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 100%;
+    width: calc(100% - 44px);
+    transform: translate(44px, -42.25px);
+}
+
+.campo > input::placeholder{
+    color: white;
+}
+
+.campo > input:focus-within {
+    background-color: #ffffff;
+    color: black;
+    outline: none;
+    border: 1px solid var(--cor01);
+}
+
+.botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: var(--cor01);
+    color: white;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#esqueci {
+    background-color: white;
+    border: 1px solid var(--cor01);
+    color: var(--cor01);
+}
+
+.botao > span {
+    font-size: 1em;
+}
+
+.botao:hover {
+    background-color:#3b807d;
+    color: white;
+    text-decoration: underline;
+    border: 1px solid var(--cor01);
+}
+
+#esqueci:hover {
+    background-color: var(--cor01);
+    color: white;
+}
+
 
 
